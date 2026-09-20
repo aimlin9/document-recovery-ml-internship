@@ -1,0 +1,700 @@
+{
+  "document_id": "test_0187",
+  "source_image_path": "held_out_temp_images\\test_0187_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Well, sir, the two ran into one another naturally enough in the corner; and then came the horrible part of the thing; for the man trampled calmly over the child\u2019s body and left her screaming on the ground.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 51,
+        "height": 20
+      },
+      "ocr_text": "Well,",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Well,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 101,
+        "top": 45,
+        "width": 29,
+        "height": 20
+      },
+      "ocr_text": "sir,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "sir,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 139,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 179,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "two",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "two",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 224,
+        "top": 49,
+        "width": 32,
+        "height": 13
+      },
+      "ocr_text": "ran",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "ran",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 266,
+        "top": 45,
+        "width": 36,
+        "height": 17
+      },
+      "ocr_text": "into",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "into",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 310,
+        "top": 49,
+        "width": 37,
+        "height": 13
+      },
+      "ocr_text": "one",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "one",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 356,
+        "top": 45,
+        "width": 79,
+        "height": 17
+      },
+      "ocr_text": "another",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "another",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 443,
+        "top": 45,
+        "width": 88,
+        "height": 22
+      },
+      "ocr_text": "naturally",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "naturally",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 539,
+        "top": 45,
+        "width": 76,
+        "height": 22
+      },
+      "ocr_text": "enough",
+      "ocr_confidence": 87.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "enough",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 624,
+        "top": 45,
+        "width": 18,
+        "height": 17
+      },
+      "ocr_text": "_",
+      "ocr_confidence": 33.0,
+      "damage_status": "missing",
+      "damage_fraction": 1.0,
+      "reconstructed_text": "in",
+      "reconstruction_confidence": 0.5696,
+      "uncertain": false,
+      "final_text": "in",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 650,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 691,
+        "top": 49,
+        "width": 71,
+        "height": 16
+      },
+      "ocr_text": "corner;",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "corner;",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 772,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 817,
+        "top": 45,
+        "width": 45,
+        "height": 17
+      },
+      "ocr_text": "then",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "then",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 871,
+        "top": 49,
+        "width": 56,
+        "height": 13
+      },
+      "ocr_text": "came",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "came",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 935,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 976,
+        "top": 45,
+        "width": 76,
+        "height": 17
+      },
+      "ocr_text": "horrible",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "horrible",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 1061,
+        "top": 45,
+        "width": 39,
+        "height": 22
+      },
+      "ocr_text": "part",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "part",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 1109,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "of",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "of",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 20,
+      "bounding_box": {
+        "left": 1135,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 21,
+      "bounding_box": {
+        "left": 1175,
+        "top": 45,
+        "width": 56,
+        "height": 22
+      },
+      "ocr_text": "thing;",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "thing;",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 22,
+      "bounding_box": {
+        "left": 1240,
+        "top": 45,
+        "width": 28,
+        "height": 17
+      },
+      "ocr_text": "for",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "for",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 23,
+      "bounding_box": {
+        "left": 1275,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 24,
+      "bounding_box": {
+        "left": 1316,
+        "top": 49,
+        "width": 44,
+        "height": 13
+      },
+      "ocr_text": "man",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "man",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 25,
+      "bounding_box": {
+        "left": 1368,
+        "top": 45,
+        "width": 91,
+        "height": 22
+      },
+      "ocr_text": "trampled",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "trampled",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 26,
+      "bounding_box": {
+        "left": 1468,
+        "top": 45,
+        "width": 66,
+        "height": 22
+      },
+      "ocr_text": "calmly",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "calmly",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 27,
+      "bounding_box": {
+        "left": 1542,
+        "top": 49,
+        "width": 45,
+        "height": 13
+      },
+      "ocr_text": "over",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "over",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 28,
+      "bounding_box": {
+        "left": 1594,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 29,
+      "bounding_box": {
+        "left": 1635,
+        "top": 45,
+        "width": 63,
+        "height": 17
+      },
+      "ocr_text": "child\u2019s",
+      "ocr_confidence": 91.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "child\u2019s",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 30,
+      "bounding_box": {
+        "left": 1707,
+        "top": 45,
+        "width": 50,
+        "height": 22
+      },
+      "ocr_text": "body",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "body",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 31,
+      "bounding_box": {
+        "left": 1765,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 32,
+      "bounding_box": {
+        "left": 1811,
+        "top": 45,
+        "width": 30,
+        "height": 17
+      },
+      "ocr_text": "left",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "left",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 33,
+      "bounding_box": {
+        "left": 1850,
+        "top": 45,
+        "width": 33,
+        "height": 17
+      },
+      "ocr_text": "her",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "her",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 34,
+      "bounding_box": {
+        "left": 1891,
+        "top": 45,
+        "width": 107,
+        "height": 22
+      },
+      "ocr_text": "screaming",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "screaming",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 35,
+      "bounding_box": {
+        "left": 2007,
+        "top": 49,
+        "width": 24,
+        "height": 13
+      },
+      "ocr_text": "on",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "on",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 36,
+      "bounding_box": {
+        "left": 2039,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 37,
+      "bounding_box": {
+        "left": 2080,
+        "top": 45,
+        "width": 77,
+        "height": 22
+      },
+      "ocr_text": "ground.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "ground.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Well, sir, the two ran into one another naturally enough at the corner; and then came the horrible part of the thing; for the man trampled calmly over the child\u2019s body and left her screaming on the ground.",
+    "cer": 0.0098,
+    "wer": 0.0263,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": null
+  }
+}

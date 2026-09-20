@@ -1,0 +1,556 @@
+{
+  "document_id": "test_0199",
+  "source_image_path": "held_out_temp_images\\test_0199_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Well, sir, Sawbones was like the rest of us; every time he looked at my prisoner, | saw that Sawbones turn sick and white with the desire to kill him.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 51,
+        "height": 20
+      },
+      "ocr_text": "Well,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Well,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 101,
+        "top": 45,
+        "width": 29,
+        "height": 20
+      },
+      "ocr_text": "sir,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "sir,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 141,
+        "top": 45,
+        "width": 23,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 1.0,
+      "reconstructed_text": "Sawbones",
+      "reconstruction_confidence": 0.7756,
+      "uncertain": false,
+      "final_text": "Sawbones",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 172,
+        "top": 49,
+        "width": 41,
+        "height": 13
+      },
+      "ocr_text": "was",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "was",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 222,
+        "top": 45,
+        "width": 33,
+        "height": 17
+      },
+      "ocr_text": "like",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "like",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 263,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 304,
+        "top": 45,
+        "width": 38,
+        "height": 17
+      },
+      "ocr_text": "rest",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "rest",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 351,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "of",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "of",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 378,
+        "top": 49,
+        "width": 29,
+        "height": 16
+      },
+      "ocr_text": "us;",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "us;",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 417,
+        "top": 49,
+        "width": 57,
+        "height": 18
+      },
+      "ocr_text": "every",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "every",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 481,
+        "top": 45,
+        "width": 44,
+        "height": 17
+      },
+      "ocr_text": "time",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "time",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 535,
+        "top": 45,
+        "width": 23,
+        "height": 17
+      },
+      "ocr_text": "he",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "he",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 567,
+        "top": 45,
+        "width": 67,
+        "height": 17
+      },
+      "ocr_text": "looked",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "looked",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 643,
+        "top": 45,
+        "width": 18,
+        "height": 17
+      },
+      "ocr_text": "at",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "at",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 671,
+        "top": 49,
+        "width": 30,
+        "height": 18
+      },
+      "ocr_text": "my",
+      "ocr_confidence": 97.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "my",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 710,
+        "top": 45,
+        "width": 88,
+        "height": 22
+      },
+      "ocr_text": "prisoner,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "prisoner,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 809,
+        "top": 45,
+        "width": 3,
+        "height": 17
+      },
+      "ocr_text": "|",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "|",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 822,
+        "top": 49,
+        "width": 41,
+        "height": 13
+      },
+      "ocr_text": "saw",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "saw",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 870,
+        "top": 45,
+        "width": 39,
+        "height": 17
+      },
+      "ocr_text": "that",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "that",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 918,
+        "top": 45,
+        "width": 108,
+        "height": 17
+      },
+      "ocr_text": "Sawbones",
+      "ocr_confidence": 92.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Sawbones",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 20,
+      "bounding_box": {
+        "left": 1034,
+        "top": 45,
+        "width": 40,
+        "height": 17
+      },
+      "ocr_text": "turn",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "turn",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 21,
+      "bounding_box": {
+        "left": 1083,
+        "top": 45,
+        "width": 40,
+        "height": 17
+      },
+      "ocr_text": "sick",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "sick",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 22,
+      "bounding_box": {
+        "left": 1131,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 23,
+      "bounding_box": {
+        "left": 1176,
+        "top": 45,
+        "width": 54,
+        "height": 17
+      },
+      "ocr_text": "white",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "white",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 24,
+      "bounding_box": {
+        "left": 1238,
+        "top": 45,
+        "width": 41,
+        "height": 17
+      },
+      "ocr_text": "with",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "with",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 25,
+      "bounding_box": {
+        "left": 1287,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 26,
+      "bounding_box": {
+        "left": 1328,
+        "top": 45,
+        "width": 62,
+        "height": 17
+      },
+      "ocr_text": "desire",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "desire",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 27,
+      "bounding_box": {
+        "left": 1398,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "to",
+      "ocr_confidence": 97.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "to",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 28,
+      "bounding_box": {
+        "left": 1427,
+        "top": 45,
+        "width": 24,
+        "height": 17
+      },
+      "ocr_text": "kill",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "kill",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 29,
+      "bounding_box": {
+        "left": 1461,
+        "top": 45,
+        "width": 41,
+        "height": 17
+      },
+      "ocr_text": "him.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "him.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Well, sir, he was like the rest of us; every time he looked at my prisoner, | saw that Sawbones turn sick and white with the desire to kill him.",
+    "cer": 0.0486,
+    "wer": 0.0333,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
+  }
+}

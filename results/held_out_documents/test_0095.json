@@ -1,0 +1,448 @@
+{
+  "document_id": "test_0095",
+  "source_image_path": "held_out_temp_images\\test_0095_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Alice went timidly up to the door, and Mrs. \u201cThere\u2019s no sort of use in knocking,\u201d said the Footman, \u201cand that for two reasons.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 50,
+        "height": 17
+      },
+      "ocr_text": "Alice",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Alice",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 98,
+        "top": 45,
+        "width": 49,
+        "height": 17
+      },
+      "ocr_text": "went",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "went",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 155,
+        "top": 45,
+        "width": 67,
+        "height": 22
+      },
+      "ocr_text": "timidly",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "timidly",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 230,
+        "top": 49,
+        "width": 24,
+        "height": 18
+      },
+      "ocr_text": "up",
+      "ocr_confidence": 97.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "up",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 262,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "to",
+      "ocr_confidence": 97.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "to",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 289,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 330,
+        "top": 45,
+        "width": 51,
+        "height": 20
+      },
+      "ocr_text": "door,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "door,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 391,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 438,
+        "top": 45,
+        "width": 91,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 0.9897,
+      "reconstructed_text": "Mrs.",
+      "reconstruction_confidence": 0.2814,
+      "uncertain": true,
+      "final_text": "Mrs.",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 539,
+        "top": 45,
+        "width": 85,
+        "height": 17
+      },
+      "ocr_text": "\u201cThere\u2019s",
+      "ocr_confidence": 88.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0028,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "\u201cThere\u2019s",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 634,
+        "top": 49,
+        "width": 23,
+        "height": 13
+      },
+      "ocr_text": "no",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "no",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 666,
+        "top": 45,
+        "width": 38,
+        "height": 17
+      },
+      "ocr_text": "sort",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "sort",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 713,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "of",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "of",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 740,
+        "top": 49,
+        "width": 36,
+        "height": 13
+      },
+      "ocr_text": "use",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "use",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 786,
+        "top": 45,
+        "width": 15,
+        "height": 17
+      },
+      "ocr_text": "in",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "in",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 811,
+        "top": 45,
+        "width": 105,
+        "height": 22
+      },
+      "ocr_text": "knocking,\u201d",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "knocking,\u201d",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 925,
+        "top": 45,
+        "width": 41,
+        "height": 17
+      },
+      "ocr_text": "said",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "said",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 974,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 1016,
+        "top": 45,
+        "width": 97,
+        "height": 20
+      },
+      "ocr_text": "Footman,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Footman,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 1123,
+        "top": 45,
+        "width": 45,
+        "height": 17
+      },
+      "ocr_text": "\u201cand",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "\u201cand",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 20,
+      "bounding_box": {
+        "left": 1176,
+        "top": 45,
+        "width": 39,
+        "height": 17
+      },
+      "ocr_text": "that",
+      "ocr_confidence": 97.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "that",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 21,
+      "bounding_box": {
+        "left": 1223,
+        "top": 45,
+        "width": 28,
+        "height": 17
+      },
+      "ocr_text": "for",
+      "ocr_confidence": 97.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "for",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 22,
+      "bounding_box": {
+        "left": 1258,
+        "top": 45,
+        "width": 36,
+        "height": 17
+      },
+      "ocr_text": "two",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "two",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 23,
+      "bounding_box": {
+        "left": 1303,
+        "top": 49,
+        "width": 88,
+        "height": 13
+      },
+      "ocr_text": "reasons.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "reasons.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Alice went timidly up to the door, and knocked. \u201cThere\u2019s no sort of use in knocking,\u201d said the Footman, \u201cand that for two reasons.",
+    "cer": 0.0538,
+    "wer": 0.0417,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
+  }
+}

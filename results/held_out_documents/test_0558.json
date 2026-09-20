@@ -1,0 +1,304 @@
+{
+  "document_id": "test_0558",
+  "source_image_path": "held_out_temp_images\\test_0558_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Twelve had scarce rung out over London, ere the knocker sounded very gently on the chimney.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 74,
+        "height": 17
+      },
+      "ocr_text": "Twelve",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Twelve",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 202,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "had",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "had",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 248,
+        "top": 49,
+        "width": 68,
+        "height": 13
+      },
+      "ocr_text": "scarce",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "scarce",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 325,
+        "top": 49,
+        "width": 45,
+        "height": 18
+      },
+      "ocr_text": "rung",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "rung",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 379,
+        "top": 45,
+        "width": 31,
+        "height": 17
+      },
+      "ocr_text": "out",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "out",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 419,
+        "top": 49,
+        "width": 45,
+        "height": 13
+      },
+      "ocr_text": "over",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "over",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 473,
+        "top": 45,
+        "width": 81,
+        "height": 20
+      },
+      "ocr_text": "London,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "London,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 564,
+        "top": 49,
+        "width": 32,
+        "height": 13
+      },
+      "ocr_text": "ere",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "ere",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 604,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 646,
+        "top": 45,
+        "width": 81,
+        "height": 17
+      },
+      "ocr_text": "knocker",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "knocker",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 735,
+        "top": 45,
+        "width": 88,
+        "height": 17
+      },
+      "ocr_text": "sounded",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "sounded",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 831,
+        "top": 49,
+        "width": 45,
+        "height": 18
+      },
+      "ocr_text": "very",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "very",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 884,
+        "top": 45,
+        "width": 62,
+        "height": 22
+      },
+      "ocr_text": "gently",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "gently",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 954,
+        "top": 49,
+        "width": 24,
+        "height": 13
+      },
+      "ocr_text": "on",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "on",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 986,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0165,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 1027,
+        "top": 45,
+        "width": 51,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 0.9977,
+      "reconstructed_text": "chimney.",
+      "reconstruction_confidence": 0.3289,
+      "uncertain": true,
+      "final_text": "chimney.",
+      "provenance": "reconstructed"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Twelve had scarce rung out over London, ere the knocker sounded very gently on the door.",
+    "cer": 0.0795,
+    "wer": 0.0625,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
+  }
+}

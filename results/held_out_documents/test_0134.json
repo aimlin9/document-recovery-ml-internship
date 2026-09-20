@@ -1,0 +1,412 @@
+{
+  "document_id": "test_0134",
+  "source_image_path": "held_out_temp_images\\test_0134_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "| must go back and see after some executions | have ordered;\u201d and she walked off, leaving Alice alone with the Gryphon.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 42,
+        "top": 45,
+        "width": 3,
+        "height": 17
+      },
+      "ocr_text": "|",
+      "ocr_confidence": 86.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "|",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 56,
+        "top": 45,
+        "width": 49,
+        "height": 17
+      },
+      "ocr_text": "must",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "must",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 114,
+        "top": 49,
+        "width": 24,
+        "height": 18
+      },
+      "ocr_text": "go",
+      "ocr_confidence": 87.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0069,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "go",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 148,
+        "top": 45,
+        "width": 48,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 0.9988,
+      "reconstructed_text": "back",
+      "reconstruction_confidence": 0.1559,
+      "uncertain": true,
+      "final_text": "back",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 204,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 250,
+        "top": 49,
+        "width": 36,
+        "height": 13
+      },
+      "ocr_text": "see",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "see",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 295,
+        "top": 45,
+        "width": 47,
+        "height": 17
+      },
+      "ocr_text": "after",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "after",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 350,
+        "top": 49,
+        "width": 56,
+        "height": 13
+      },
+      "ocr_text": "some",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "some",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 415,
+        "top": 45,
+        "width": 111,
+        "height": 17
+      },
+      "ocr_text": "executions",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "executions",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 536,
+        "top": 45,
+        "width": 3,
+        "height": 17
+      },
+      "ocr_text": "|",
+      "ocr_confidence": 94.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "|",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 550,
+        "top": 45,
+        "width": 48,
+        "height": 17
+      },
+      "ocr_text": "have",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "have",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 607,
+        "top": 45,
+        "width": 94,
+        "height": 20
+      },
+      "ocr_text": "ordered;\u201d",
+      "ocr_confidence": 92.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "ordered;\u201d",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 710,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 756,
+        "top": 45,
+        "width": 36,
+        "height": 17
+      },
+      "ocr_text": "she",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "she",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 800,
+        "top": 45,
+        "width": 72,
+        "height": 17
+      },
+      "ocr_text": "walked",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "walked",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 881,
+        "top": 45,
+        "width": 31,
+        "height": 20
+      },
+      "ocr_text": "off,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "off,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 922,
+        "top": 45,
+        "width": 72,
+        "height": 22
+      },
+      "ocr_text": "leaving",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "leaving",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 1002,
+        "top": 45,
+        "width": 50,
+        "height": 17
+      },
+      "ocr_text": "Alice",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Alice",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 1061,
+        "top": 45,
+        "width": 55,
+        "height": 17
+      },
+      "ocr_text": "alone",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "alone",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 1124,
+        "top": 45,
+        "width": 41,
+        "height": 17
+      },
+      "ocr_text": "with",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "with",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 20,
+      "bounding_box": {
+        "left": 1173,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 21,
+      "bounding_box": {
+        "left": 1214,
+        "top": 45,
+        "width": 95,
+        "height": 22
+      },
+      "ocr_text": "Gryphon.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Gryphon.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "| must go back and see after some executions | have ordered;\u201d and she walked off, leaving Alice alone with the Gryphon.",
+    "cer": 0.0,
+    "wer": 0.0,
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": 1.0
+  }
+}

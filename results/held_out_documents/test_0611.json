@@ -1,0 +1,574 @@
+{
+  "document_id": "test_0611",
+  "source_image_path": "held_out_temp_images\\test_0611_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Again, in the course of my life, which had been, after all, nine tenths a life of effort, virtue and control, it had been much less exercised and much less exhausted.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 65,
+        "height": 22
+      },
+      "ocr_text": "Again,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Again,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 116,
+        "top": 45,
+        "width": 15,
+        "height": 17
+      },
+      "ocr_text": "in",
+      "ocr_confidence": 94.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "in",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 139,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 94.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 180,
+        "top": 49,
+        "width": 69,
+        "height": 13
+      },
+      "ocr_text": "course",
+      "ocr_confidence": 88.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "course",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 258,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 1.0,
+      "reconstructed_text": "of",
+      "reconstruction_confidence": 0.9996,
+      "uncertain": false,
+      "final_text": "of",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 285,
+        "top": 49,
+        "width": 31,
+        "height": 18
+      },
+      "ocr_text": "my",
+      "ocr_confidence": 0.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.009,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "my",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 324,
+        "top": 45,
+        "width": 34,
+        "height": 20
+      },
+      "ocr_text": "life,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "life,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 367,
+        "top": 45,
+        "width": 59,
+        "height": 17
+      },
+      "ocr_text": "which",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "which",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 435,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "had",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "had",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 481,
+        "top": 45,
+        "width": 56,
+        "height": 20
+      },
+      "ocr_text": "been,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "been,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 547,
+        "top": 45,
+        "width": 47,
+        "height": 17
+      },
+      "ocr_text": "after",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "after",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 602,
+        "top": 45,
+        "width": 27,
+        "height": 20
+      },
+      "ocr_text": "all,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "all,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 639,
+        "top": 45,
+        "width": 42,
+        "height": 17
+      },
+      "ocr_text": "nine",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "nine",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 689,
+        "top": 45,
+        "width": 64,
+        "height": 17
+      },
+      "ocr_text": "tenths",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "tenths",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 756,
+        "top": 41,
+        "width": 10,
+        "height": 30
+      },
+      "ocr_text": "a",
+      "ocr_confidence": 94.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "a",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 782,
+        "top": 45,
+        "width": 28,
+        "height": 17
+      },
+      "ocr_text": "life",
+      "ocr_confidence": 94.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "life",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 819,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "of",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "of",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 846,
+        "top": 45,
+        "width": 59,
+        "height": 20
+      },
+      "ocr_text": "effort,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "effort,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 914,
+        "top": 45,
+        "width": 57,
+        "height": 17
+      },
+      "ocr_text": "virtue",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "virtue",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 980,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 20,
+      "bounding_box": {
+        "left": 1026,
+        "top": 45,
+        "width": 75,
+        "height": 20
+      },
+      "ocr_text": "control,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "control,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 21,
+      "bounding_box": {
+        "left": 1112,
+        "top": 45,
+        "width": 9,
+        "height": 17
+      },
+      "ocr_text": "it",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "it",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 22,
+      "bounding_box": {
+        "left": 1130,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "had",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "had",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 23,
+      "bounding_box": {
+        "left": 1176,
+        "top": 45,
+        "width": 50,
+        "height": 17
+      },
+      "ocr_text": "been",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "been",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 24,
+      "bounding_box": {
+        "left": 1235,
+        "top": 45,
+        "width": 56,
+        "height": 17
+      },
+      "ocr_text": "much",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "much",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 25,
+      "bounding_box": {
+        "left": 1300,
+        "top": 45,
+        "width": 40,
+        "height": 17
+      },
+      "ocr_text": "less",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "less",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 26,
+      "bounding_box": {
+        "left": 1349,
+        "top": 45,
+        "width": 99,
+        "height": 17
+      },
+      "ocr_text": "exercised",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "exercised",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 27,
+      "bounding_box": {
+        "left": 1457,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 28,
+      "bounding_box": {
+        "left": 1503,
+        "top": 45,
+        "width": 56,
+        "height": 17
+      },
+      "ocr_text": "much",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "much",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 29,
+      "bounding_box": {
+        "left": 1568,
+        "top": 45,
+        "width": 40,
+        "height": 17
+      },
+      "ocr_text": "less",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "less",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 30,
+      "bounding_box": {
+        "left": 1617,
+        "top": 45,
+        "width": 113,
+        "height": 17
+      },
+      "ocr_text": "exhausted.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "exhausted.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Again, in the course of my life, which had been, after all, nine tenths a life of effort, virtue and control, it had been much less exercised and much less exhausted.",
+    "cer": 0.0,
+    "wer": 0.0,
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": null
+  }
+}

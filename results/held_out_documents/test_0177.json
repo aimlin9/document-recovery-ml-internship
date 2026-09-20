@@ -1,0 +1,196 @@
+{
+  "document_id": "test_0177",
+  "source_image_path": "held_out_temp_images\\test_0177_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Hence, no doubt the bond that united him and Mr.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 42,
+        "top": 45,
+        "width": 71,
+        "height": 20
+      },
+      "ocr_text": "Hence,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Hence,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 124,
+        "top": 49,
+        "width": 23,
+        "height": 13
+      },
+      "ocr_text": "no",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "no",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 156,
+        "top": 45,
+        "width": 57,
+        "height": 17
+      },
+      "ocr_text": "doubt",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "doubt",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 221,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 263,
+        "top": 45,
+        "width": 49,
+        "height": 17
+      },
+      "ocr_text": "bond",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "bond",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 320,
+        "top": 45,
+        "width": 39,
+        "height": 17
+      },
+      "ocr_text": "that",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "that",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 368,
+        "top": 45,
+        "width": 62,
+        "height": 17
+      },
+      "ocr_text": "united",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "united",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 440,
+        "top": 45,
+        "width": 35,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 1.0,
+      "reconstructed_text": "him",
+      "reconstruction_confidence": 0.3393,
+      "uncertain": true,
+      "final_text": "him",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 483,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "to",
+      "ocr_confidence": 95.0,
+      "damage_status": "partial",
+      "damage_fraction": 0.0743,
+      "reconstructed_text": "and",
+      "reconstruction_confidence": 0.8194,
+      "uncertain": false,
+      "final_text": "and",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 512,
+        "top": 45,
+        "width": 31,
+        "height": 17
+      },
+      "ocr_text": "Mr.",
+      "ocr_confidence": 94.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Mr.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Hence, no doubt the bond that united him to Mr.",
+    "cer": 0.0638,
+    "wer": 0.1,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": null
+  }
+}

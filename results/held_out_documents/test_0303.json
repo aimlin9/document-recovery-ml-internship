@@ -1,0 +1,610 @@
+{
+  "document_id": "test_0303",
+  "source_image_path": "held_out_temp_images\\test_0303_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "The hall, in which he was now left alone, was pet fancy of his friend the doctor\u2019s; and Utterson himself was wont to speak of it as the pleasantest room in London.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 44,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 1.0,
+      "reconstructed_text": "The",
+      "reconstruction_confidence": 0.6674,
+      "uncertain": false,
+      "final_text": "The",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 94,
+        "top": 45,
+        "width": 39,
+        "height": 20
+      },
+      "ocr_text": "hall,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "hall,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 144,
+        "top": 45,
+        "width": 15,
+        "height": 17
+      },
+      "ocr_text": "in",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "in",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 167,
+        "top": 45,
+        "width": 59,
+        "height": 17
+      },
+      "ocr_text": "which",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "which",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 236,
+        "top": 45,
+        "width": 23,
+        "height": 17
+      },
+      "ocr_text": "he",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "he",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 267,
+        "top": 49,
+        "width": 41,
+        "height": 13
+      },
+      "ocr_text": "was",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "was",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 318,
+        "top": 49,
+        "width": 41,
+        "height": 13
+      },
+      "ocr_text": "now",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "now",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 367,
+        "top": 45,
+        "width": 30,
+        "height": 17
+      },
+      "ocr_text": "left",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "left",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 406,
+        "top": 45,
+        "width": 61,
+        "height": 20
+      },
+      "ocr_text": "alone,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "alone,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 476,
+        "top": 49,
+        "width": 41,
+        "height": 13
+      },
+      "ocr_text": "was",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "was",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 521,
+        "top": 41,
+        "width": 10,
+        "height": 30
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 547,
+        "top": 45,
+        "width": 30,
+        "height": 22
+      },
+      "ocr_text": "pet",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "pet",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 585,
+        "top": 45,
+        "width": 57,
+        "height": 22
+      },
+      "ocr_text": "fancy",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "fancy",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 650,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "of",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "of",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 678,
+        "top": 45,
+        "width": 27,
+        "height": 17
+      },
+      "ocr_text": "his",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "his",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 713,
+        "top": 45,
+        "width": 58,
+        "height": 17
+      },
+      "ocr_text": "friend",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "friend",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 779,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 92.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 820,
+        "top": 45,
+        "width": 87,
+        "height": 20
+      },
+      "ocr_text": "doctor\u2019s;",
+      "ocr_confidence": 90.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "doctor\u2019s;",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 917,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 964,
+        "top": 45,
+        "width": 87,
+        "height": 17
+      },
+      "ocr_text": "Utterson",
+      "ocr_confidence": 91.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Utterson",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 20,
+      "bounding_box": {
+        "left": 1061,
+        "top": 45,
+        "width": 73,
+        "height": 17
+      },
+      "ocr_text": "himself",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "himself",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 21,
+      "bounding_box": {
+        "left": 1141,
+        "top": 49,
+        "width": 41,
+        "height": 13
+      },
+      "ocr_text": "was",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "was",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 22,
+      "bounding_box": {
+        "left": 1190,
+        "top": 45,
+        "width": 49,
+        "height": 17
+      },
+      "ocr_text": "wont",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "wont",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 23,
+      "bounding_box": {
+        "left": 1247,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "to",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "to",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 24,
+      "bounding_box": {
+        "left": 1275,
+        "top": 45,
+        "width": 62,
+        "height": 22
+      },
+      "ocr_text": "speak",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "speak",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 25,
+      "bounding_box": {
+        "left": 1345,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "of",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "of",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 26,
+      "bounding_box": {
+        "left": 1373,
+        "top": 45,
+        "width": 9,
+        "height": 17
+      },
+      "ocr_text": "it",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "it",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 27,
+      "bounding_box": {
+        "left": 1391,
+        "top": 49,
+        "width": 23,
+        "height": 13
+      },
+      "ocr_text": "as",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "as",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 28,
+      "bounding_box": {
+        "left": 1422,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 29,
+      "bounding_box": {
+        "left": 1464,
+        "top": 45,
+        "width": 118,
+        "height": 22
+      },
+      "ocr_text": "pleasantest",
+      "ocr_confidence": 92.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "pleasantest",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 30,
+      "bounding_box": {
+        "left": 1591,
+        "top": 49,
+        "width": 52,
+        "height": 13
+      },
+      "ocr_text": "room",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "room",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 31,
+      "bounding_box": {
+        "left": 1653,
+        "top": 45,
+        "width": 15,
+        "height": 17
+      },
+      "ocr_text": "in",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "in",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 32,
+      "bounding_box": {
+        "left": 1678,
+        "top": 45,
+        "width": 81,
+        "height": 17
+      },
+      "ocr_text": "London.",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "London.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "This hall, in which he was now left alone, was a pet fancy of his friend the doctor\u2019s; and Utterson himself was wont to speak of it as the pleasantest room in London.",
+    "cer": 0.0241,
+    "wer": 0.0606,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": null
+  }
+}

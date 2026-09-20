@@ -1,0 +1,394 @@
+{
+  "document_id": "test_0498",
+  "source_image_path": "held_out_temp_images\\test_0498_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Utterson; I\u2019m book-learned enough for that; but a man has his feelings, and | give you my bible-word it was Mr.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 42,
+        "top": 45,
+        "width": 93,
+        "height": 20
+      },
+      "ocr_text": "Utterson;",
+      "ocr_confidence": 92.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Utterson;",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 146,
+        "top": 45,
+        "width": 29,
+        "height": 17
+      },
+      "ocr_text": "I\u2019m",
+      "ocr_confidence": 89.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "I\u2019m",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 184,
+        "top": 45,
+        "width": 135,
+        "height": 17
+      },
+      "ocr_text": "book-learned",
+      "ocr_confidence": 92.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0009,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "book-learned",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 328,
+        "top": 45,
+        "width": 76,
+        "height": 22
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 0.9892,
+      "reconstructed_text": "enough",
+      "reconstruction_confidence": 0.4197,
+      "uncertain": true,
+      "final_text": "enough",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 412,
+        "top": 45,
+        "width": 28,
+        "height": 17
+      },
+      "ocr_text": "for",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "for",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 447,
+        "top": 45,
+        "width": 45,
+        "height": 20
+      },
+      "ocr_text": "that;",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "that;",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 502,
+        "top": 45,
+        "width": 31,
+        "height": 17
+      },
+      "ocr_text": "but",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "but",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 548,
+        "top": 49,
+        "width": 5,
+        "height": 13
+      },
+      "ocr_text": "a",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "a",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 562,
+        "top": 49,
+        "width": 44,
+        "height": 13
+      },
+      "ocr_text": "man",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "man",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 615,
+        "top": 45,
+        "width": 36,
+        "height": 17
+      },
+      "ocr_text": "has",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "has",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 660,
+        "top": 45,
+        "width": 28,
+        "height": 17
+      },
+      "ocr_text": "his",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "his",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 696,
+        "top": 45,
+        "width": 86,
+        "height": 22
+      },
+      "ocr_text": "feelings,",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "feelings,",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 792,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 839,
+        "top": 45,
+        "width": 3,
+        "height": 17
+      },
+      "ocr_text": "|",
+      "ocr_confidence": 87.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "|",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 852,
+        "top": 45,
+        "width": 41,
+        "height": 22
+      },
+      "ocr_text": "give",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "give",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 901,
+        "top": 49,
+        "width": 37,
+        "height": 18
+      },
+      "ocr_text": "you",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "you",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 947,
+        "top": 49,
+        "width": 31,
+        "height": 18
+      },
+      "ocr_text": "my",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "my",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 986,
+        "top": 45,
+        "width": 106,
+        "height": 17
+      },
+      "ocr_text": "bible-word",
+      "ocr_confidence": 92.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "bible-word",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 1102,
+        "top": 45,
+        "width": 9,
+        "height": 17
+      },
+      "ocr_text": "it",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "it",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 1119,
+        "top": 49,
+        "width": 41,
+        "height": 13
+      },
+      "ocr_text": "was",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "was",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 20,
+      "bounding_box": {
+        "left": 1170,
+        "top": 45,
+        "width": 31,
+        "height": 17
+      },
+      "ocr_text": "Mr.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Mr.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Utterson; I\u2019m book-learned enough for that; but a man has his feelings, and | give you my bible-word it was Mr.",
+    "cer": 0.0,
+    "wer": 0.0,
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": 1.0
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "document_id": "test_0140",
+  "source_image_path": "held_out_temp_images\\test_0140_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "See how eagerly the lobsters and the turtles can advance!",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 41,
+        "top": 45,
+        "width": 40,
+        "height": 17
+      },
+      "ocr_text": "See",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "See",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 90,
+        "top": 45,
+        "width": 42,
+        "height": 17
+      },
+      "ocr_text": "how",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "how",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 140,
+        "top": 45,
+        "width": 76,
+        "height": 22
+      },
+      "ocr_text": "eagerly",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "eagerly",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 223,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 264,
+        "top": 45,
+        "width": 81,
+        "height": 17
+      },
+      "ocr_text": "lobsters",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "lobsters",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 354,
+        "top": 45,
+        "width": 37,
+        "height": 17
+      },
+      "ocr_text": "and",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "and",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 399,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "the",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 439,
+        "top": 45,
+        "width": 64,
+        "height": 17
+      },
+      "ocr_text": "turtles",
+      "ocr_confidence": 84.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0009,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "turtles",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 512,
+        "top": 45,
+        "width": 21,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 1.0,
+      "reconstructed_text": "can",
+      "reconstruction_confidence": 0.143,
+      "uncertain": true,
+      "final_text": "can",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 542,
+        "top": 45,
+        "width": 93,
+        "height": 17
+      },
+      "ocr_text": "advance!",
+      "ocr_confidence": 73.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0013,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "advance!",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "See how eagerly the lobsters and the turtles all advance!",
+    "cer": 0.0526,
+    "wer": 0.1,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
+  }
+}

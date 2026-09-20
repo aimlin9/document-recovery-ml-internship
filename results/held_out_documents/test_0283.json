@@ -1,0 +1,376 @@
+{
+  "document_id": "test_0283",
+  "source_image_path": "held_out_temp_images\\test_0283_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "What do you want?\u201d \u201cI see you are going in,\u201d returned Mr. Mr. \u201clam an old friend of Dr.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 55,
+        "height": 17
+      },
+      "ocr_text": "What",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "What",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 104,
+        "top": 45,
+        "width": 25,
+        "height": 17
+      },
+      "ocr_text": "do",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "do",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 136,
+        "top": 49,
+        "width": 37,
+        "height": 18
+      },
+      "ocr_text": "you",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "you",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 181,
+        "top": 45,
+        "width": 70,
+        "height": 17
+      },
+      "ocr_text": "want?\u201d",
+      "ocr_confidence": 93.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "want?\u201d",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 260,
+        "top": 45,
+        "width": 12,
+        "height": 17
+      },
+      "ocr_text": "\u201cI",
+      "ocr_confidence": 91.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "\u201cI",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 282,
+        "top": 49,
+        "width": 36,
+        "height": 13
+      },
+      "ocr_text": "see",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "see",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 6,
+      "bounding_box": {
+        "left": 326,
+        "top": 49,
+        "width": 37,
+        "height": 18
+      },
+      "ocr_text": "you",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "you",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 7,
+      "bounding_box": {
+        "left": 372,
+        "top": 49,
+        "width": 32,
+        "height": 13
+      },
+      "ocr_text": "are",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "are",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 8,
+      "bounding_box": {
+        "left": 413,
+        "top": 45,
+        "width": 55,
+        "height": 22
+      },
+      "ocr_text": "going",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "going",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 9,
+      "bounding_box": {
+        "left": 478,
+        "top": 45,
+        "width": 30,
+        "height": 20
+      },
+      "ocr_text": "in,\u201d",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "in,\u201d",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 10,
+      "bounding_box": {
+        "left": 517,
+        "top": 45,
+        "width": 86,
+        "height": 17
+      },
+      "ocr_text": "returned",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "returned",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 11,
+      "bounding_box": {
+        "left": 611,
+        "top": 45,
+        "width": 32,
+        "height": 17
+      },
+      "ocr_text": "the",
+      "ocr_confidence": 96.0,
+      "damage_status": "partial",
+      "damage_fraction": 0.0607,
+      "reconstructed_text": "Mr.",
+      "reconstruction_confidence": 0.729,
+      "uncertain": false,
+      "final_text": "Mr.",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 12,
+      "bounding_box": {
+        "left": 652,
+        "top": 45,
+        "width": 72,
+        "height": 22
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 0.983,
+      "reconstructed_text": "Mr.",
+      "reconstruction_confidence": 0.2522,
+      "uncertain": true,
+      "final_text": "Mr.",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 13,
+      "bounding_box": {
+        "left": 734,
+        "top": 45,
+        "width": 12,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "intact",
+      "damage_fraction": 0.0049,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 14,
+      "bounding_box": {
+        "left": 756,
+        "top": 49,
+        "width": 31,
+        "height": 13
+      },
+      "ocr_text": "\u201clam",
+      "ocr_confidence": 60.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "\u201clam",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 15,
+      "bounding_box": {
+        "left": 796,
+        "top": 49,
+        "width": 24,
+        "height": 13
+      },
+      "ocr_text": "an",
+      "ocr_confidence": 60.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "an",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 16,
+      "bounding_box": {
+        "left": 829,
+        "top": 45,
+        "width": 29,
+        "height": 17
+      },
+      "ocr_text": "old",
+      "ocr_confidence": 95.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "old",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 17,
+      "bounding_box": {
+        "left": 866,
+        "top": 45,
+        "width": 58,
+        "height": 17
+      },
+      "ocr_text": "friend",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "friend",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 18,
+      "bounding_box": {
+        "left": 933,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "of",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "of",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 19,
+      "bounding_box": {
+        "left": 961,
+        "top": 45,
+        "width": 28,
+        "height": 17
+      },
+      "ocr_text": "Dr.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Dr.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "What do you want?\u201d \u201cI see you are going in,\u201d returned the lawyer. \u201cI am an old friend of Dr.",
+    "cer": 0.1087,
+    "wer": 0.2,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
+  }
+}

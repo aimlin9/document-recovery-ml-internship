@@ -1,0 +1,124 @@
+{
+  "document_id": "test_0392",
+  "source_image_path": "held_out_temp_images\\test_0392_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "Utterson?\u201d \u201cOnly an invitation to dinner.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 42,
+        "top": 45,
+        "width": 108,
+        "height": 17
+      },
+      "ocr_text": "Utterson?\u201d",
+      "ocr_confidence": 90.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Utterson?\u201d",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 159,
+        "top": 45,
+        "width": 56,
+        "height": 22
+      },
+      "ocr_text": "\u201cOnly",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "\u201cOnly",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 223,
+        "top": 49,
+        "width": 24,
+        "height": 13
+      },
+      "ocr_text": "an",
+      "ocr_confidence": 67.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "an",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 257,
+        "top": 45,
+        "width": 90,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 0.9935,
+      "reconstructed_text": "invitation",
+      "reconstruction_confidence": 0.8854,
+      "uncertain": false,
+      "final_text": "invitation",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 355,
+        "top": 45,
+        "width": 19,
+        "height": 17
+      },
+      "ocr_text": "to",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0155,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "to",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 383,
+        "top": 45,
+        "width": 69,
+        "height": 17
+      },
+      "ocr_text": "dinner.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "dinner.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "Utterson?\u201d \u201cOnly an invitation to dinner.",
+    "cer": 0.0,
+    "wer": 0.0,
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": 1.0
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "document_id": "test_0293",
+  "source_image_path": "held_out_temp_images\\test_0293_clean.png",
+  "page_number": 1,
+  "confidence_threshold": 0.5442,
+  "final_text": "The lawyer stood awhile before Mr.",
+  "words": [
+    {
+      "word_index": 0,
+      "bounding_box": {
+        "left": 40,
+        "top": 45,
+        "width": 40,
+        "height": 17
+      },
+      "ocr_text": "The",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "The",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 1,
+      "bounding_box": {
+        "left": 89,
+        "top": 45,
+        "width": 67,
+        "height": 22
+      },
+      "ocr_text": "lawyer",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "lawyer",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 2,
+      "bounding_box": {
+        "left": 164,
+        "top": 45,
+        "width": 56,
+        "height": 17
+      },
+      "ocr_text": "stood",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "stood",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 3,
+      "bounding_box": {
+        "left": 229,
+        "top": 45,
+        "width": 64,
+        "height": 17
+      },
+      "ocr_text": "awhile",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0046,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "awhile",
+      "provenance": "ocr"
+    },
+    {
+      "word_index": 4,
+      "bounding_box": {
+        "left": 301,
+        "top": 45,
+        "width": 55,
+        "height": 17
+      },
+      "ocr_text": null,
+      "ocr_confidence": null,
+      "damage_status": "missing",
+      "damage_fraction": 0.9989,
+      "reconstructed_text": "before",
+      "reconstruction_confidence": 0.4441,
+      "uncertain": true,
+      "final_text": "before",
+      "provenance": "reconstructed"
+    },
+    {
+      "word_index": 5,
+      "bounding_box": {
+        "left": 366,
+        "top": 45,
+        "width": 31,
+        "height": 17
+      },
+      "ocr_text": "Mr.",
+      "ocr_confidence": 96.0,
+      "damage_status": "intact",
+      "damage_fraction": 0.0,
+      "reconstructed_text": null,
+      "reconstruction_confidence": null,
+      "uncertain": null,
+      "final_text": "Mr.",
+      "provenance": "ocr"
+    }
+  ],
+  "evaluation": {
+    "ground_truth_text": "The lawyer stood awhile when Mr.",
+    "cer": 0.1875,
+    "wer": 0.1667,
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
+  }
+}

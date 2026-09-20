@@ -1,0 +1,31 @@
+{
+  "n_documents_attempted": 739,
+  "n_documents_succeeded": 739,
+  "n_documents_errored": 0,
+  "errors": [],
+  "denominator_note": "N for reconstruction/flagging metrics below is n_documents_succeeded (one targeted damaged word per document), NOT Step 4's 1,478 text-only examples.",
+  "corpus_level_cer_wer": {
+    "ocr_only_cer": 0.0492,
+    "ocr_only_wer": 0.056,
+    "final_stitched_cer": 0.03,
+    "final_stitched_wer": 0.0383
+  },
+  "reconstruction_accuracy": {
+    "n": 739,
+    "top1_accuracy_overall": 0.4032,
+    "n_content_words": 521,
+    "top1_accuracy_content_words": 0.2802
+  },
+  "uncertainty_flagging_at_locked_threshold": {
+    "threshold": 0.5442,
+    "flag_rate": 0.4655,
+    "error_recall": 0.6576,
+    "precision": 0.843,
+    "unflagged_error_rate": 0.3823
+  },
+  "provenance_counts": {
+    "total_words": 15680,
+    "ocr_provenance": 14899,
+    "reconstructed_provenance": 781
+  }
+}

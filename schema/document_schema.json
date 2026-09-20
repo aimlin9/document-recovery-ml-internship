@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learndepth.local/ml-t2-022/document-schema.json",
+  "title": "Reconstructed Document Output",
+  "description": "The integration contract for Step 5. One instance of this schema is produced per processed page. Each pipeline component (OCR, damage classification, reconstruction, confidence scoring) fills in only the fields it is responsible for; the final stitching stage combines them and invents nothing new. NOTE ON SCOPE: 'damage_status' and 'damage_fraction' are currently derived by comparing each word's bounding box against a synthetically generated tear mask (Step 2), which is known because the pipeline created the damage itself for benchmarking. No component in this pipeline yet detects damage location in a real scanned document with no known mask; that is out of scope for this schema and remains future work. 'evaluation' is only present when this document was processed in benchmark mode, where ground truth text is available.",
+  "type": "object",
+  "required": ["document_id", "source_image_path", "page_number", "words", "confidence_threshold", "final_text"],
+  "additionalProperties": false,
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "description": "Stable identifier for the source document, assigned at ingestion."
+    },
+    "source_image_path": {
+      "type": "string",
+      "description": "Path to the source page image this output was generated from."
+    },
+    "page_number": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "1-indexed page number within the source document."
+    },
+    "confidence_threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "The locked reconstruction-confidence threshold used to compute each word's 'uncertain' flag (Step 4: chosen on a validation set to catch >=80% of wrong reconstructions, then locked). Included per-document so the document is self-describing even if the threshold is retuned later."
+    },
+    "final_text": {
+      "type": "string",
+      "description": "The full stitched output text for the page: each word's 'final_text' joined in reading order."
+    },
+    "words": {
+      "type": "array",
+      "description": "One entry per word position on the page, in reading order.",
+      "items": { "$ref": "#/$defs/word" }
+    },
+    "evaluation": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/evaluation" }
+      ],
+      "description": "Present only when ground truth text is available for this document (benchmark/test mode). Null or omitted in real deployment, where no ground truth exists."
+    }
+  },
+  "$defs": {
+    "bounding_box": {
+      "type": "object",
+      "required": ["left", "top", "width", "height"],
+      "additionalProperties": false,
+      "properties": {
+        "left": { "type": "integer", "minimum": 0 },
+        "top": { "type": "integer", "minimum": 0 },
+        "width": { "type": "integer", "minimum": 0 },
+        "height": { "type": "integer", "minimum": 0 }
+      },
+      "description": "Pixel bounding box, same convention as pytesseract.image_to_data: left/top of the box's top-left corner, plus width and height."
+    },
+    "word": {
+      "type": "object",
+      "required": [
+        "word_index", "bounding_box", "ocr_text", "ocr_confidence",
+        "damage_status", "damage_fraction", "final_text", "provenance"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "word_index": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "0-indexed position of this word in reading order on the page."
+        },
+        "bounding_box": { "$ref": "#/$defs/bounding_box" },
+        "ocr_text": {
+          "type": ["string", "null"],
+          "description": "Raw text Tesseract returned at this position on the (possibly damaged) image. Null when OCR detected no text here at all, which happens when a word is torn away entirely (damage_status: missing)."
+        },
+        "ocr_confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Tesseract's own word-level confidence, native 0-100 scale, not renormalized. Null when ocr_text is null."
+        },
+        "damage_status": {
+          "type": "string",
+          "enum": ["intact", "partial", "missing"],
+          "description": "From Step 2/3's mask-coverage classification: intact (<5% of the word's box overlaps the damage mask), partial (5-90%), missing (>90%). See top-level description for the scope limitation on how this is currently computed."
+        },
+        "damage_fraction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Fraction of the word's bounding box overlapping the damage mask, pixel-by-pixel."
+        },
+        "reconstructed_text": {
+          "type": ["string", "null"],
+          "description": "The model's reconstructed word. Present only when damage_status is 'partial' or 'missing' (reconstruction is attempted for any non-intact word); null/absent for intact words, which keep their OCR text as-is."
+        },
+        "reconstruction_confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Geometric mean of the per-subword probabilities RoBERTa assigned its own chosen tokens while decoding this word (Step 4): exp(mean(log p_i)). Present only when reconstructed_text is present."
+        },
+        "uncertain": {
+          "type": ["boolean", "null"],
+          "description": "True when reconstruction_confidence is at or below confidence_threshold, i.e. flagged for human review. Present only when reconstruction_confidence is present; null for intact words, since the Step 4 confidence layer was built specifically for reconstruction output, not raw OCR confidence."
+        },
+        "final_text": {
+          "type": "string",
+          "description": "The text actually used for this word in the stitched output: reconstructed_text if reconstruction ran, otherwise ocr_text."
+        },
+        "provenance": {
+          "type": "string",
+          "enum": ["ocr", "reconstructed"],
+          "description": "Which source final_text came from."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "damage_status": { "const": "intact" } } },
+          "then": {
+            "properties": {
+              "reconstructed_text": { "const": null },
+              "reconstruction_confidence": { "const": null },
+              "uncertain": { "const": null },
+              "provenance": { "const": "ocr" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "damage_status": { "enum": ["partial", "missing"] } } },
+          "then": {
+            "properties": {
+              "provenance": { "const": "reconstructed" }
+            },
+            "required": ["reconstructed_text", "reconstruction_confidence", "uncertain"]
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "type": "object",
+      "required": ["ground_truth_text", "cer", "wer", "reconstruction_top1_accuracy", "content_word_accuracy"],
+      "additionalProperties": false,
+      "properties": {
+        "ground_truth_text": {
+          "type": "string",
+          "description": "The known clean text this page was generated from, used only in benchmark/test mode."
+        },
+        "cer": { "type": "number", "minimum": 0, "description": "Character error rate of final_text against ground_truth_text." },
+        "wer": { "type": "number", "minimum": 0, "description": "Word error rate of final_text against ground_truth_text." },
+        "reconstruction_top1_accuracy": {
+          "type": "number", "minimum": 0, "maximum": 1,
+          "description": "Share of words with damage_status != intact whose reconstructed_text exactly matches ground truth."
+        },
+        "content_word_accuracy": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "number", "minimum": 0, "maximum": 1 }
+          ],
+          "description": "Same as reconstruction_top1_accuracy, restricted to content words. Null when this document's reconstructed word(s) happened to be entirely function words, so there is nothing content-word-specific to score."
+        }
+      }
+    }
+  }
+}

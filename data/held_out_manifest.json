@@ -1,0 +1,7 @@
+{
+  "corpus_file": "sentence_corpus.jsonl",
+  "corpus_file_sha256": "937dd3563d42de99b725d47a149b058046b2d4fa90f058ae403d0ea8fb11af1f",
+  "total_records_in_file": 9739,
+  "held_out_test_count": 739,
+  "note": "This count is read from the file at run time, not hardcoded. If this number ever differs from a previously reported count, trust this one and flag the discrepancy explicitly rather than silently averaging or picking whichever number is convenient."
+}
