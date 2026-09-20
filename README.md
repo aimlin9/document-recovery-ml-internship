@@ -30,7 +30,7 @@ This project builds a pipeline that recovers text from documents with torn or mi
 
 The fine-tuned RoBERTa model (`roberta-finetuned-final/`) is too large for GitHub and is hosted separately on Google Drive:
 
-**[Add Google Drive link here]**
+https://drive.google.com/drive/folders/1gbYFTWuWN3otPWE4aoP2oH5NIM9QhaHm?usp=sharing
 
 To reproduce Step 5, download the model folder from that link and place it at the project root as `roberta-finetuned-final/` before running `scripts/build_document_json.py` or `scripts/run_held_out_evaluation.py`.
 
@@ -41,6 +41,8 @@ pip install -r requirements.txt
 \\\
 
 Requires Tesseract OCR installed separately (path configured in `scripts/build_document_json.py`).
+
+Note: `held_out_temp_images/` and other generated `.png` files are intermediate artifacts created automatically when the evaluation scripts run (deterministically, from the corpus and a fixed seed). They are not tracked in this repo and do not need to be downloaded separately.
 
 ## Key Results (Step 5, full held-out set, n=739)
 
