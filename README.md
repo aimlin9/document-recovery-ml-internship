@@ -2,7 +2,7 @@
 
 ML internship project — Learn Depth Academy LLP, Track 2 (Advanced ML Internship), Problem ID ML-T2-022.
 
-**Author:** Gyimah Ramsey Opoku (Student ID 9021623), KNUST, Kumasi, Ghana
+**Author:** Gyimah Ramsey Opoku (Student ID LD-1787404180111), KNUST, Kumasi, Ghana
 
 ## Project Overview
 
