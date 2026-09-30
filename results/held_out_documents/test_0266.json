@@ -1,6 +1,6 @@
 {
   "document_id": "test_0266",
-  "source_image_path": "held_out_temp_images\\test_0266_clean.png",
+  "source_image_path": "held_out_temp_images/test_0266_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "If he could but once set eyes on him, he thought s mystery would lighten and perhaps roll altogether away, as was the habit of mysterious things when well examined.",
@@ -550,7 +550,7 @@
     "ground_truth_text": "If he could but once set eyes on him, he thought the mystery would lighten and perhaps roll altogether away, as was the habit of mysterious things when well examined.",
     "cer": 0.0181,
     "wer": 0.0333,
-    "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": null
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": 1.0
   }
 }

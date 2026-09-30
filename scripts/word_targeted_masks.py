@@ -7,7 +7,7 @@ from jiwer import cer, wer
 
 from torn_regions import apply_tear, estimate_background_color
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+import paths  # noqa: F401  (configures the Tesseract binary location)
 CLEAN_IMAGE_PATH = "clean.png"
 
 

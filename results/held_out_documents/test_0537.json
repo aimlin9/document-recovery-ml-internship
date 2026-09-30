@@ -1,6 +1,6 @@
 {
   "document_id": "test_0537",
-  "source_image_path": "held_out_temp_images\\test_0537_clean.png",
+  "source_image_path": "held_out_temp_images/test_0537_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "This drawer | beg of you to carry it with you to Cavendish Square exactly as it stands. \u201cThat is the first part of the service: now for the second.",
@@ -550,7 +550,7 @@
     "ground_truth_text": "This drawer | beg of you to carry back with you to Cavendish Square exactly as it stands. \u201cThat is the first part of the service: now for the second.",
     "cer": 0.0268,
     "wer": 0.0333,
-    "reconstruction_top1_accuracy": 1.0,
-    "content_word_accuracy": null
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
   }
 }

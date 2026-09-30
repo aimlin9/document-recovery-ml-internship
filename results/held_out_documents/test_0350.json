@@ -1,6 +1,6 @@
 {
   "document_id": "test_0350",
-  "source_image_path": "held_out_temp_images\\test_0350_clean.png",
+  "source_image_path": "held_out_temp_images/test_0350_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "A Bennet, </s>A silvery-haired old woman opened the door.",
@@ -173,6 +173,6 @@
     "cer": 0.2667,
     "wer": 0.3333,
     "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": null
+    "content_word_accuracy": 0.0
   }
 }

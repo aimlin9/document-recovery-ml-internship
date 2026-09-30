@@ -1,6 +1,6 @@
 {
   "document_id": "test_0566",
-  "source_image_path": "held_out_temp_images\\test_0566_clean.png",
+  "source_image_path": "held_out_temp_images/test_0566_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "Attempting To relate, this ludicrous accoutrement was far from moving me to laughter.",
@@ -244,7 +244,7 @@
     "ground_truth_text": "Strange to relate, this ludicrous accoutrement was far from moving me to laughter.",
     "cer": 0.1098,
     "wer": 0.1538,
-    "reconstruction_top1_accuracy": 1.0,
-    "content_word_accuracy": null
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
   }
 }

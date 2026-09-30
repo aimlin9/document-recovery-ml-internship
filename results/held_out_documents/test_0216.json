@@ -1,6 +1,6 @@
 {
   "document_id": "test_0216",
-  "source_image_path": "held_out_temp_images\\test_0216_clean.png",
+  "source_image_path": "held_out_temp_images/test_0216_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "You start a question, and it\u2019s like pecking in stone.",
@@ -191,6 +191,6 @@
     "cer": 0.1321,
     "wer": 0.2,
     "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": null
+    "content_word_accuracy": 0.0
   }
 }

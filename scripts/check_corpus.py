@@ -1,6 +1,8 @@
 import json, hashlib
 
-with open("sentence_corpus.jsonl", "rb") as f:
+import paths
+
+with open(paths.CORPUS_PATH, "rb") as f:
     raw = f.read()
 print("sentence_corpus.jsonl sha256:", hashlib.sha256(raw).hexdigest())
 

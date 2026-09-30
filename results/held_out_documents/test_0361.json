@@ -1,6 +1,6 @@
 {
   "document_id": "test_0361",
-  "source_image_path": "held_out_temp_images\\test_0361_clean.png",
+  "source_image_path": "held_out_temp_images/test_0361_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "Utterson found his way and Dr.",
@@ -118,7 +118,7 @@
     "ground_truth_text": "Utterson found his way to Dr.",
     "cer": 0.1034,
     "wer": 0.1667,
-    "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": null
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": 1.0
   }
 }

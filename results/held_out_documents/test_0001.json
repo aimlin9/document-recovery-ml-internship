@@ -1,6 +1,6 @@
 {
   "document_id": "test_0001",
-  "source_image_path": "held_out_temp_images\\test_0001_clean.png",
+  "source_image_path": "held_out_temp_images/test_0001_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "The rabbit-hole went straight on into a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.",

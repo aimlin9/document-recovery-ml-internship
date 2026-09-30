@@ -1,6 +1,6 @@
 {
   "document_id": "camus_sample_001",
-  "source_image_path": "clean.png",
+  "source_image_path": "outputs/camus_sample_001_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "To doubt everything or to believe everything are two equally convenient choices; both dispense with the necessity of reflection.",

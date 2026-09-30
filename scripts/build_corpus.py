@@ -3,6 +3,8 @@ import urllib.request
 import random
 import json
 
+import paths
+
 GUTENBERG_BOOKS = {
     "train_val_pool": [
         (1342, "Pride and Prejudice"),
@@ -99,7 +101,7 @@ if __name__ == "__main__":
 
     all_records = train_set + val_set + test_set
 
-    with open("sentence_corpus.jsonl", "w", encoding="utf-8") as f:
+    with open(paths.CORPUS_PATH, "w", encoding="utf-8") as f:
         for record in all_records:
             f.write(json.dumps(record) + "\n")
 
@@ -108,4 +110,4 @@ if __name__ == "__main__":
     print(f"  validation: {len(val_set)}")
     test_sources = sorted(set(r["source"] for r in test_set))
     print(f"  test (held out, from {test_sources}): {len(test_set)}")
-    print(f"\nSaved to sentence_corpus.jsonl")
+    print(f"\nSaved to {paths.CORPUS_PATH}")

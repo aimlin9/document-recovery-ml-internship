@@ -1,6 +1,6 @@
 {
   "document_id": "test_0010",
-  "source_image_path": "held_out_temp_images\\test_0010_clean.png",
+  "source_image_path": "held_out_temp_images/test_0010_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "There are no mice in the air, I\u2019m afraid, but you might catch a bat, and that\u2019s very like a mouse, you know.",

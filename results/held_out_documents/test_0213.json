@@ -1,6 +1,6 @@
 {
   "document_id": "test_0213",
-  "source_image_path": "held_out_temp_images\\test_0213_clean.png",
+  "source_image_path": "held_out_temp_images/test_0213_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "Utterson asking rather suddenly: \u201cAnd you don\u2019t know if the drawer of the cupboard lives there?\u201d \u201cA likely place, isn\u2019t it?\u201d returned Mr.",

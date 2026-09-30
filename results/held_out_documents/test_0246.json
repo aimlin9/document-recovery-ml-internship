@@ -1,6 +1,6 @@
 {
   "document_id": "test_0246",
-  "source_image_path": "held_out_temp_images\\test_0246_clean.png",
+  "source_image_path": "held_out_temp_images/test_0246_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "And yet it was his ignorance of Mr.",
@@ -154,7 +154,7 @@
     "ground_truth_text": "And hitherto it was his ignorance of Mr.",
     "cer": 0.15,
     "wer": 0.125,
-    "reconstruction_top1_accuracy": 1.0,
-    "content_word_accuracy": 1.0
+    "reconstruction_top1_accuracy": 0.0,
+    "content_word_accuracy": 0.0
   }
 }

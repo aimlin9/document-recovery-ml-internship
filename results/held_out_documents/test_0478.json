@@ -1,6 +1,6 @@
 {
   "document_id": "test_0478",
-  "source_image_path": "held_out_temp_images\\test_0478_clean.png",
+  "source_image_path": "held_out_temp_images/test_0478_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "It seems he had slipped out to look for this drug or whatever it is; for the cabinet door was open, and there he was at the the end of the room digging among the crates.",
@@ -658,7 +658,7 @@
     "ground_truth_text": "It seems he had slipped out to look for this drug or whatever it is; for the cabinet door was open, and there he was at the far end of the room digging among the crates.",
     "cer": 0.0178,
     "wer": 0.0278,
-    "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": 0.0
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": null
   }
 }

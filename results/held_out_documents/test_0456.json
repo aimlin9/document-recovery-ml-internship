@@ -1,6 +1,6 @@
 {
   "document_id": "test_0456",
-  "source_image_path": "held_out_temp_images\\test_0456_clean.png",
+  "source_image_path": "held_out_temp_images/test_0456_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "Utterson, sir, asking to see you,\u201d he called; and even as he did so, once more violently went beckoned the lawyer to give ear.",
@@ -443,6 +443,6 @@
     "cer": 0.0984,
     "wer": 0.0833,
     "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": null
+    "content_word_accuracy": 0.0
   }
 }

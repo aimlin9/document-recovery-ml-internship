@@ -1,6 +1,6 @@
 {
   "document_id": "test_0234",
-  "source_image_path": "held_out_temp_images\\test_0234_clean.png",
+  "source_image_path": "held_out_temp_images/test_0234_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "You see, Richard, your tale has gone home.",

@@ -1,6 +1,6 @@
 {
   "document_id": "test_0222",
-  "source_image_path": "held_out_temp_images\\test_0222_clean.png",
+  "source_image_path": "held_out_temp_images/test_0222_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "| \u201cthat\u2019s a good rule of yours.\u201d \u201cYes, | think it is,\u201d returned Enfield. \u201cBut for all that,\u201d continued the lawyer, \u201cthere\u2019s one point | want to ask.",

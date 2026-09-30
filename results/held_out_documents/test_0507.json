@@ -1,6 +1,6 @@
 {
   "document_id": "test_0507",
-  "source_image_path": "held_out_temp_images\\test_0507_clean.png",
+  "source_image_path": "held_out_temp_images/test_0507_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "Only when a new sample comes from the sea, there\u2019s a bit of a break.",

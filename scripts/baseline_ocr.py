@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 from jiwer import cer, wer
 import statistics
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+import paths  # noqa: F401  (configures the Tesseract binary location)
 
 CLEAN_TEXT = (
     "To doubt everything or to believe everything are two equally convenient "
@@ -22,8 +22,21 @@ DEGRADATION_LEVELS = {
 SAMPLES_PER_LEVEL = 5
 
 
+def _load_font(size=24):
+    """Arial is what every reported result was rendered with (Windows).
+    On machines without it, fall back to a similar sans-serif font so the
+    pipeline still runs - but word boxes, and therefore the exact
+    held-out numbers, can then differ slightly from the reported ones."""
+    for name in ("arial.ttf", "Arial.ttf", "LiberationSans-Regular.ttf", "DejaVuSans.ttf"):
+        try:
+            return ImageFont.truetype(name, size)
+        except OSError:
+            continue
+    return ImageFont.load_default(size=size)
+
+
 def render_clean_image(text, path="clean.png"):
-    font = ImageFont.truetype("arial.ttf", 24)
+    font = _load_font(24)
     dummy_img = Image.new("RGB", (10, 10))
     dummy_draw = ImageDraw.Draw(dummy_img)
     bbox = dummy_draw.textbbox((0, 0), text, font=font)

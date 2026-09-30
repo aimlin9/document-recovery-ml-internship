@@ -1,7 +1,19 @@
 venv/
 __pycache__/
 *.pyc
+.vscode/
+*.log
+
+# Fine-tuned model weights: too large for GitHub, hosted on Google Drive (see README)
 roberta-finetuned-final/
+
+# Regenerated intermediate images (deterministic from corpus + seeds)
 *.png
 held_out_temp_images/
-.vscode/
+outputs/
+
+# ...except the submission screenshots and figures, which are deliverables
+!docs/screenshots/*.png
+!docs/figures/*.png
+results/*_smoke.json
+results/*_smoke.jsonl

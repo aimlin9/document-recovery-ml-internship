@@ -1,6 +1,7 @@
 from PIL import Image
 from word_targeted_masks import get_word_boxes
 from torn_regions import estimate_background_color, apply_tear
+import paths  # noqa: F401  (configures the Tesseract binary location)
 from transformers import pipeline
 
 CLEAN_IMAGE_PATH = "clean.png"
@@ -78,7 +79,6 @@ if __name__ == "__main__":
         # Get OCR's read of the DAMAGED image, this is the real-world
         # context you'd actually have, not the clean ground truth.
         import pytesseract
-        pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
         damaged_text = pytesseract.image_to_string(torn_img, config="--psm 6").strip()
         ocr_words = damaged_text.split()
 

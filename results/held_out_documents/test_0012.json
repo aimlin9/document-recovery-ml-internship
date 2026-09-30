@@ -1,6 +1,6 @@
 {
   "document_id": "test_0012",
-  "source_image_path": "held_out_temp_images\\test_0012_clean.png",
+  "source_image_path": "held_out_temp_images/test_0012_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "Do cats eat bats?\u201d and sometimes, \u201cDo bats eat cats?\u201d for, you see, as she answer either question, it didn\u2019t much matter which way she answered it.",

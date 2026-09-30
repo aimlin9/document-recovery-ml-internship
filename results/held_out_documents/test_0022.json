@@ -1,6 +1,6 @@
 {
   "document_id": "test_0022",
-  "source_image_path": "held_out_temp_images\\test_0022_clean.png",
+  "source_image_path": "held_out_temp_images/test_0022_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "I wonder suppose I\u2019ve been changed in the night?",
@@ -172,7 +172,7 @@
     "ground_truth_text": "| wonder if I\u2019ve been changed in the night?",
     "cer": 0.186,
     "wer": 0.2222,
-    "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": 0.0
+    "reconstruction_top1_accuracy": 1.0,
+    "content_word_accuracy": 1.0
   }
 }

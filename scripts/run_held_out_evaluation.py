@@ -30,37 +30,35 @@ damage (real image + OCR noise, not pure text masking) - a genuine
 generalization check, not a re-tuning.
 """
 
+import argparse
 import hashlib
 import json
 import os
 import random
 import time
 
-import pytesseract
-from pytesseract import Output
 from PIL import Image
 from jiwer import cer, wer
 
+import paths  # also configures the Tesseract binary location
 from baseline_ocr import render_clean_image
 from torn_regions import apply_tear, estimate_background_color
 from word_targeted_masks import get_word_boxes, build_targeted_mask
 from reconstruction import classify_all_words
 from build_document_json import (
-    load_reconstruction_model, match_ocr_word, reconstruct_word,
+    load_reconstruction_model, ocr_words_from_image, build_word_records, load_schema,
     CONFIDENCE_THRESHOLD, FUNCTION_WORDS,
 )
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-
-CORPUS_PATH = "sentence_corpus.jsonl"
-OUTPUT_DIR = "held_out_documents"
-TEMP_IMAGE_DIR = "held_out_temp_images"
-RESULTS_JSONL = "held_out_results.jsonl"          # one line per document, written incrementally
-SUMMARY_PATH = "held_out_summary_report.json"
-MANIFEST_PATH = "held_out_manifest.json"
+CORPUS_PATH = paths.CORPUS_PATH
+OUTPUT_DIR = os.path.join(paths.RESULTS_DIR, "held_out_documents")
+TEMP_IMAGE_DIR = os.path.join(paths.PROJECT_ROOT, "held_out_temp_images")  # regenerated, not tracked
+RESULTS_JSONL = os.path.join(paths.RESULTS_DIR, "held_out_results.jsonl")  # one line per document, written incrementally
+SUMMARY_PATH = os.path.join(paths.RESULTS_DIR, "held_out_summary_report.json")
+MANIFEST_PATH = paths.MANIFEST_PATH
 
 # Set to a small integer (e.g. 20) for a smoke test before committing to
-# the full run. None = process every held-out sentence.
+# the full run, or pass --limit on the command line. None = every sentence.
 LIMIT = None
 
 
@@ -72,7 +70,7 @@ def load_held_out_sentences():
     test_records = [r for r in records if r["split"] == "test"]
 
     manifest = {
-        "corpus_file": CORPUS_PATH,
+        "corpus_file": os.path.relpath(CORPUS_PATH, paths.PROJECT_ROOT).replace(os.sep, "/"),
         "corpus_file_sha256": file_hash,
         "total_records_in_file": len(records),
         "held_out_test_count": len(test_records),
@@ -135,58 +133,28 @@ def process_one_sentence(doc_index, sentence_record, tokenizer, model):
     damaged_img.save(damaged_path)
 
     classified_words = classify_all_words(ground_truth_words, mask)
+    ocr_words = ocr_words_from_image(damaged_img)
+    word_records = build_word_records(classified_words, ocr_words, tokenizer, model)
 
-    ocr_data = pytesseract.image_to_data(damaged_img, config="--psm 6", output_type=Output.DICT)
-    ocr_words = []
-    for i in range(len(ocr_data["text"])):
-        t = ocr_data["text"][i].strip()
-        conf = float(ocr_data["conf"][i]) if ocr_data["conf"][i] not in ("-1", "") else -1
-        if t and conf >= 0:
-            ocr_words.append({
-                "text": t, "left": ocr_data["left"][i], "top": ocr_data["top"][i],
-                "width": ocr_data["width"][i], "height": ocr_data["height"][i], "conf": conf,
-            })
-
-    word_records = []
-    for idx, w in enumerate(classified_words):
-        matched = match_ocr_word(w, ocr_words)
-        word_records.append({
-            "word_index": idx,
-            "bounding_box": {"left": w["left"], "top": w["top"], "width": w["width"], "height": w["height"]},
-            "ocr_text": matched["text"] if matched else None,
-            "ocr_confidence": matched["conf"] if matched else None,
-            "damage_status": w["damage_status"],
-            "damage_fraction": round(w["damage_fraction"], 4),
-            "reconstructed_text": None,
-            "reconstruction_confidence": None,
-            "uncertain": None,
-            "final_text": matched["text"] if matched else "",
-            "provenance": "ocr",
-            "_ground_truth_text": w["text"],
-        })
-
-    context_words = [r["final_text"] or "[UNK]" for r in word_records]
-
-    reconstruction_record = None  # the single targeted word's outcome, for aggregation
-    for idx, r in enumerate(word_records):
-        if r["damage_status"] == "intact":
-            continue
-        reconstructed_text, confidence = reconstruct_word(tokenizer, model, context_words, idx)
-        r["reconstructed_text"] = reconstructed_text
-        r["reconstruction_confidence"] = round(confidence, 4)
-        r["uncertain"] = confidence <= CONFIDENCE_THRESHOLD
-        r["final_text"] = reconstructed_text
-        r["provenance"] = "reconstructed"
-
-        gt = r["_ground_truth_text"].strip(",.;:").lower()
-        pred = reconstructed_text.strip(",.;:").lower()
+    # Score the TARGETED word. The tear polygon is padded, so it sometimes
+    # clips a neighbouring word as well (41/739 documents); that neighbour
+    # is still reconstructed and written to the JSON, but it is not the
+    # word this document was built to test. The original version of this
+    # loop overwrote the record on every damaged word, so it scored
+    # whichever damaged word came LAST in reading order - the neighbour,
+    # not the target, in 17/739 documents.
+    reconstruction_record = None
+    target = word_records[target_index]
+    if target["provenance"] == "reconstructed":
+        gt = target["_ground_truth_text"].strip(",.;:").lower()
+        pred = target["reconstructed_text"].strip(",.;:").lower()
         reconstruction_record = {
             "document_id": document_id,
-            "target_word": r["_ground_truth_text"],
-            "predicted_word": reconstructed_text,
+            "target_word": target["_ground_truth_text"],
+            "predicted_word": target["reconstructed_text"],
             "is_correct": pred == gt,
             "is_content_word": gt not in FUNCTION_WORDS,
-            "confidence": confidence,
+            "confidence": target["_raw_confidence"],
         }
 
     ocr_only_text = " ".join(r["ocr_text"] for r in word_records if r["ocr_text"])
@@ -194,7 +162,7 @@ def process_one_sentence(doc_index, sentence_record, tokenizer, model):
 
     document = {
         "document_id": document_id,
-        "source_image_path": clean_path,
+        "source_image_path": paths.rel(clean_path),
         "page_number": 1,
         "confidence_threshold": CONFIDENCE_THRESHOLD,
         "final_text": final_text,
@@ -219,13 +187,24 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     os.makedirs(TEMP_IMAGE_DIR, exist_ok=True)
 
+    parser = argparse.ArgumentParser(description="Step 5 held-out batch evaluation.")
+    parser.add_argument("--limit", type=int, default=LIMIT,
+                        help="process only the first N held-out sentences (smoke test)")
+    limit = parser.parse_args().limit
+
+    # A smoke test must never overwrite the full run's committed outputs.
+    results_jsonl, summary_path = RESULTS_JSONL, SUMMARY_PATH
+    if limit is not None:
+        results_jsonl = results_jsonl.replace(".jsonl", "_smoke.jsonl")
+        summary_path = summary_path.replace(".json", "_smoke.json")
+
     import jsonschema
-    schema = json.load(open("document_schema.json"))
+    schema = load_schema()
 
     held_out = load_held_out_sentences()
-    if LIMIT is not None:
-        held_out = held_out[:LIMIT]
-        print(f"LIMIT set: processing only the first {LIMIT} of the held-out set.")
+    if limit is not None:
+        held_out = held_out[:limit]
+        print(f"LIMIT set: processing only the first {limit} of the held-out set.")
 
     tokenizer, model = load_reconstruction_model()
 
@@ -234,7 +213,7 @@ def main():
     total_words, total_reconstructed = 0, 0
     errors = []
 
-    results_file = open(RESULTS_JSONL, "w", encoding="utf-8")
+    results_file = open(results_jsonl, "w", encoding="utf-8")
     start = time.time()
 
     for i, sentence_record in enumerate(held_out):
@@ -290,7 +269,9 @@ def main():
         "n_documents_errored": len(errors),
         "errors": errors,
         "denominator_note": "N for reconstruction/flagging metrics below is n_documents_succeeded "
-                             "(one targeted damaged word per document), NOT Step 4's 1,478 text-only examples.",
+                             "(one targeted damaged word per document, scored on that targeted word), "
+                             "NOT Step 4's 1,478 text-only examples, and NOT reconstructed_provenance "
+                             "below, which also counts neighbouring words the padded tear happened to clip.",
         "corpus_level_cer_wer": {
             "ocr_only_cer": round(ocr_only_cer, 4),
             "ocr_only_wer": round(ocr_only_wer, 4),
@@ -317,14 +298,14 @@ def main():
         },
     }
 
-    with open(SUMMARY_PATH, "w", encoding="utf-8") as f:
+    with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
 
     print("\n=== SUMMARY ===")
     print(json.dumps(summary, indent=2))
     print(f"\nPer-document JSONs written to {OUTPUT_DIR}/")
     print(f"Manifest: {MANIFEST_PATH}")
-    print(f"Summary: {SUMMARY_PATH}")
+    print(f"Summary: {summary_path}")
 
 
 if __name__ == "__main__":

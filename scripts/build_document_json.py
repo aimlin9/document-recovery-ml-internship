@@ -42,11 +42,10 @@ from pytesseract import Output
 from PIL import Image
 from jiwer import cer, wer
 
+import paths  # also configures the Tesseract binary location
 from torn_regions import apply_tear, estimate_background_color, generate_ribbon_tear
 from word_targeted_masks import get_word_boxes
 from reconstruction import classify_all_words
-
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # Locked in Step 4 on the validation set. Do not retune here - see
 # Step4_Uncertainty_Tagging_Results_Note for how it was chosen.
@@ -57,7 +56,7 @@ CONFIDENCE_THRESHOLD = 0.5442
 # plain pretrained roberta-base with a loud warning, since the locked
 # threshold above was calibrated against the fine-tuned model's own
 # confidence distribution and is not verified for a different model.
-FINE_TUNED_MODEL_PATH = "./roberta-finetuned-final"
+FINE_TUNED_MODEL_PATH = paths.FINE_TUNED_MODEL_PATH
 
 FUNCTION_WORDS = {  # kept in sync with build_masked_examples.py by hand
     "the", "a", "an", "of", "to", "in", "on", "at", "for", "and", "or", "but",
@@ -67,7 +66,7 @@ FUNCTION_WORDS = {  # kept in sync with build_masked_examples.py by hand
 
 def load_reconstruction_model():
     from transformers import RobertaTokenizerFast, RobertaForMaskedLM
-    if os.path.isdir(FINE_TUNED_MODEL_PATH):
+    if os.path.isfile(os.path.join(FINE_TUNED_MODEL_PATH, "config.json")):
         print(f"Loading fine-tuned model from {FINE_TUNED_MODEL_PATH}")
         tokenizer = RobertaTokenizerFast.from_pretrained(FINE_TUNED_MODEL_PATH)
         model = RobertaForMaskedLM.from_pretrained(FINE_TUNED_MODEL_PATH)
@@ -164,38 +163,10 @@ def reconstruct_word(tokenizer, model, context_words, target_index):
     return best_result
 
 
-def _reconstruction_accuracy(word_records, content_only):
-    attempted = [r for r in word_records if r["damage_status"] != "intact"]
-    if content_only:
-        attempted = [r for r in attempted if r["_ground_truth_text"].strip(",.;:").lower() not in FUNCTION_WORDS]
-    if not attempted:
-        return None
-    correct = sum(
-        1 for r in attempted
-        if r["reconstructed_text"].strip(",.;:").lower() == r["_ground_truth_text"].strip(",.;:").lower()
-    )
-    return round(correct / len(attempted), 4)
-
-
-def build_document_json(document_id, clean_image_path, seed=42):
-    clean_img = Image.open(clean_image_path).convert("RGB")
-    width, height = clean_img.size
-    bg_color = estimate_background_color(clean_img)
-
-    # Ground-truth word positions come from OCR on the CLEAN image, before
-    # damage is introduced - see the scope note at the top of this file.
-    ground_truth_words = get_word_boxes(clean_image_path)
-    print("of:", repr(ground_truth_words[17]["text"]))
-    print("reflection:", repr(ground_truth_words[18]["text"]))
-    ground_truth_text = " ".join(w["text"] for w in ground_truth_words)
-
-    mask = generate_ribbon_tear(width, height, seed=seed, edge_tear=False)
-    damaged_img = apply_tear(clean_img, mask, bg_color)
-    damaged_img.save(f"{document_id}_damaged.png")
-
-    classified_words = classify_all_words(ground_truth_words, mask)
-
-    ocr_data = pytesseract.image_to_data(damaged_img, config="--psm 6", output_type=Output.DICT)
+def ocr_words_from_image(img):
+    """Runs Tesseract on an image and returns every word it read with a
+    non-negative confidence, in the same dict shape get_word_boxes uses."""
+    ocr_data = pytesseract.image_to_data(img, config="--psm 6", output_type=Output.DICT)
     ocr_words = []
     for i in range(len(ocr_data["text"])):
         text = ocr_data["text"][i].strip()
@@ -205,9 +176,14 @@ def build_document_json(document_id, clean_image_path, seed=42):
                 "text": text, "left": ocr_data["left"][i], "top": ocr_data["top"][i],
                 "width": ocr_data["width"][i], "height": ocr_data["height"][i], "conf": conf,
             })
+    return ocr_words
 
-    tokenizer, model = load_reconstruction_model()
 
+def build_word_records(classified_words, ocr_words, tokenizer, model):
+    """Pass 1 matches every expected word position to its OCR read; pass 2
+    reconstructs every non-intact word. Returns one record per word, each
+    carrying a private `_ground_truth_text` key that callers strip before
+    writing the final JSON."""
     # Pass 1: resolve every word's OCR match. Damaged words that OCR
     # could not read at all get ocr_text=None here; that's expected.
     word_records = []
@@ -240,15 +216,58 @@ def build_document_json(document_id, clean_image_path, seed=42):
         reconstructed_text, confidence = reconstruct_word(tokenizer, model, context_words, idx)
         r["reconstructed_text"] = reconstructed_text
         r["reconstruction_confidence"] = round(confidence, 4)
+        r["_raw_confidence"] = confidence  # unrounded, used for threshold metrics
         r["uncertain"] = confidence <= CONFIDENCE_THRESHOLD
         r["final_text"] = reconstructed_text
         r["provenance"] = "reconstructed"
+    return word_records
+
+
+def load_schema():
+    with open(paths.SCHEMA_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _reconstruction_accuracy(word_records, content_only):
+    attempted = [r for r in word_records if r["damage_status"] != "intact"]
+    if content_only:
+        attempted = [r for r in attempted if r["_ground_truth_text"].strip(",.;:").lower() not in FUNCTION_WORDS]
+    if not attempted:
+        return None
+    correct = sum(
+        1 for r in attempted
+        if r["reconstructed_text"].strip(",.;:").lower() == r["_ground_truth_text"].strip(",.;:").lower()
+    )
+    return round(correct / len(attempted), 4)
+
+
+def build_document_json(document_id, clean_image_path, seed=42, tokenizer=None, model=None, damaged_image_path=None):
+    clean_img = Image.open(clean_image_path).convert("RGB")
+    width, height = clean_img.size
+    bg_color = estimate_background_color(clean_img)
+
+    # Ground-truth word positions come from OCR on the CLEAN image, before
+    # damage is introduced - see the scope note at the top of this file.
+    ground_truth_words = get_word_boxes(clean_image_path)
+    ground_truth_text = " ".join(w["text"] for w in ground_truth_words)
+
+    mask = generate_ribbon_tear(width, height, seed=seed, edge_tear=False)
+    damaged_img = apply_tear(clean_img, mask, bg_color)
+    damaged_img.save(damaged_image_path or os.path.join(paths.OUTPUTS_DIR, f"{document_id}_damaged.png"))
+
+    classified_words = classify_all_words(ground_truth_words, mask)
+    ocr_words = ocr_words_from_image(damaged_img)
+
+    if tokenizer is None or model is None:
+        tokenizer, model = load_reconstruction_model()
+
+    word_records = build_word_records(classified_words, ocr_words, tokenizer, model)
 
     final_text = " ".join(r["final_text"] for r in word_records)
 
     document = {
         "document_id": document_id,
-        "source_image_path": clean_image_path,
+        "source_image_path": paths.rel(clean_image_path),
         "page_number": 1,
         "confidence_threshold": CONFIDENCE_THRESHOLD,
         "final_text": final_text,
@@ -265,14 +284,23 @@ def build_document_json(document_id, clean_image_path, seed=42):
 
 
 if __name__ == "__main__":
-    document = build_document_json("camus_sample_001", "clean.png", seed=42)
+    import jsonschema
+    from baseline_ocr import CLEAN_TEXT, render_clean_image
 
-    with open("camus_sample_001_output.json", "w", encoding="utf-8") as f:
+    os.makedirs(paths.OUTPUTS_DIR, exist_ok=True)
+    clean_path = os.path.join(paths.OUTPUTS_DIR, "camus_sample_001_clean.png")
+    render_clean_image(CLEAN_TEXT, clean_path)  # regenerated deterministically, never tracked in git
+
+    document = build_document_json("camus_sample_001", clean_path, seed=42)
+
+    # Fail loudly, not silently, if the output doesn't match the contract -
+    # and do it BEFORE writing, so a malformed document never reaches disk.
+    jsonschema.validate(instance=document, schema=load_schema())
+
+    out_path = os.path.join(paths.RESULTS_DIR, "camus_sample_001_output.json")
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(document, f, indent=2)
     print(json.dumps(document, indent=2))
-
-    # Fail loudly, not silently, if the output doesn't match the contract.
-    import jsonschema
-    schema = json.load(open("document_schema.json"))
-    jsonschema.validate(instance=document, schema=schema)
-    print("\nValidated against document_schema.json - OK")
+    print()
+    print(f"Validated against {os.path.relpath(paths.SCHEMA_PATH, paths.PROJECT_ROOT)} - OK")
+    print(f"Written to {os.path.relpath(out_path, paths.PROJECT_ROOT)}")

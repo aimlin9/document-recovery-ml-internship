@@ -1,6 +1,6 @@
 {
   "document_id": "test_0272",
-  "source_image_path": "held_out_temp_images\\test_0272_clean.png",
+  "source_image_path": "held_out_temp_images/test_0272_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "At Twenty-five o\u2019clock, when the shops were closed, the by-street was very solitary and, in spite of the low growl of London from all round, very silent.",
@@ -497,6 +497,6 @@
     "cer": 0.0759,
     "wer": 0.0741,
     "reconstruction_top1_accuracy": 0.0,
-    "content_word_accuracy": 0.0
+    "content_word_accuracy": null
   }
 }

@@ -1,6 +1,6 @@
 {
   "document_id": "test_0565",
-  "source_image_path": "held_out_temp_images\\test_0565_clean.png",
+  "source_image_path": "held_out_temp_images/test_0565_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "This bore some resemblance to incipient rigour, and was accompanied by a marked sinking of of pulse.",
@@ -316,7 +316,7 @@
     "ground_truth_text": "This bore some resemblance to incipient rigour, and was accompanied by a marked sinking of the pulse.",
     "cer": 0.0297,
     "wer": 0.0588,
-    "reconstruction_top1_accuracy": 0.0,
+    "reconstruction_top1_accuracy": 1.0,
     "content_word_accuracy": null
   }
 }

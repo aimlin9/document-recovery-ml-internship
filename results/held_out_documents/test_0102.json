@@ -1,6 +1,6 @@
 {
   "document_id": "test_0102",
-  "source_image_path": "held_out_temp_images\\test_0102_clean.png",
+  "source_image_path": "held_out_temp_images/test_0102_clean.png",
   "page_number": 1,
   "confidence_threshold": 0.5442,
   "final_text": "Alice was just beginning to think to herself, \u201cNow, what am | to do with this creature when | get it home?\u201d when it grunted again, so violently, that she looked down into its face in utter alarm.",

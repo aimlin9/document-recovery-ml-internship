@@ -2,6 +2,8 @@ import json
 import random
 import re
 
+import paths
+
 FUNCTION_WORDS = {
     "a", "an", "the", "and", "or", "but", "if", "of", "to", "in", "on", "at",
     "by", "for", "with", "about", "against", "between", "into", "through",
@@ -60,13 +62,13 @@ if __name__ == "__main__":
     rng = random.Random(42)
 
     all_examples = []
-    with open("sentence_corpus.jsonl", "r", encoding="utf-8") as f:
+    with open(paths.CORPUS_PATH, "r", encoding="utf-8") as f:
         for i, line in enumerate(f):
             record = json.loads(line)
             examples = build_masked_examples(record, sentence_id=i, rng=rng)
             all_examples.extend(examples)
 
-    with open("masked_examples.jsonl", "w", encoding="utf-8") as f:
+    with open(paths.MASKED_EXAMPLES_PATH, "w", encoding="utf-8") as f:
         for ex in all_examples:
             f.write(json.dumps(ex) + "\n")
 
@@ -79,4 +81,4 @@ if __name__ == "__main__":
         content_count = sum(1 for e in exs if e["is_content_word"])
         print(f"  {split}: {len(exs)} examples ({content_count} content-word, {len(exs) - content_count} function-word)")
 
-    print(f"\nSaved to masked_examples.jsonl")
+    print(f"\nSaved to {paths.MASKED_EXAMPLES_PATH}")
