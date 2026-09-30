@@ -20,7 +20,7 @@ LearnDepth™ Advanced Machine Learning Internship, Track 2 · Problem ID **ML-T
 | Requirement | Where |
 |---|---|
 | **Technical paper** | [`docs/Technical_Paper_Document_Recovery_ML_Internship.pdf`](docs/Technical_Paper_Document_Recovery_ML_Internship.pdf) (41 pages, cover page + profile, abstract, methodology, results, appendices) |
-| **Demo video** | [`docs/demo/demo_video.mp4`](docs/demo/demo_video.mp4) (2 min 13 s, captioned walkthrough of the live pipeline and the 739-document evaluation) |
+| **Demo video** | [`docs/demo/demo_video.mp4`](docs/demo/demo_video.mp4) (2 min 15 s, captioned walkthrough of the live pipeline and the 739-document evaluation) |
 | **Deployment** | Interactive Streamlit app ([`app.py`](app.py)), run locally with `streamlit run app.py` (see [Run the demo](#run-the-demo-app)) |
 | **Final project screenshots** | [`docs/screenshots/`](docs/screenshots/) (8 screenshots, previewed below) |
 | **Source code** | [`scripts/`](scripts/) (pipeline) · [`schema/`](schema/) (data contract) · [`results/`](results/) (evaluation outputs) |
@@ -92,9 +92,11 @@ Download the folder and place it at the project root as `roberta-finetuned-final
 streamlit run app.py
 ```
 
-Then open http://localhost:8501. The app has three tabs:
+Then open http://localhost:8501. The interface uses a restrained editorial design: a warm off-white canvas, Newsreader serif headings, Geist and Geist Mono for text and data, 1px hairline borders, and colour used only for meaning (green for a confident reconstruction, red for one flagged for review). The theme lives in [`.streamlit/config.toml`](.streamlit/config.toml).
 
-- **Live pipeline:** pick a held-out sentence (or type your own), choose a random ribbon tear or a targeted word, and run the full pipeline. It shows the clean and damaged page, the recovered text colour-coded by provenance and confidence, a word-level table, and the downloadable schema-valid JSON.
+The app has three tabs:
+
+- **Live pipeline:** pick a held-out sentence (or type your own), choose a random ribbon tear or a targeted word, and run the full pipeline. It shows the clean and damaged page, the recovered text with every reconstructed word highlighted by confidence, a word-level table, and the downloadable schema-valid JSON.
 - **Held-out evaluation:** metrics and charts for all 739 documents, the confidence distribution against the threshold, and a filterable document browser.
 - **Data contract:** the schema's conditional rules, with a live "try breaking it" check.
 

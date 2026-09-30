@@ -1,9 +1,18 @@
 [theme]
 base = "light"
-primaryColor = "#3b5bdb"
-backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#f4f6fa"
-textColor = "#1f2430"
+primaryColor = "#111111"
+backgroundColor = "#FBFBFA"
+secondaryBackgroundColor = "#F4F3EF"
+textColor = "#2F3437"
+borderColor = "#EAEAEA"
+baseRadius = "6px"
+font = "Geist:https://fonts.googleapis.com/css2?family=Geist:wght@300..700&display=swap"
+headingFont = "Newsreader:https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..600&display=swap"
+codeFont = "Geist Mono:https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap"
+
+[theme.sidebar]
+backgroundColor = "#F7F6F3"
+secondaryBackgroundColor = "#EFEEEA"
 
 [server]
 headless = true
